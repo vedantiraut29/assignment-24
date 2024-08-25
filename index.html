@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <link rel="icon" href="adoption.png" type="image/png"/>
+
+    <style>
+        .body{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height:auto;
+        }
+        
+        
+        .heading{
+            text-align: center;
+            font-size: 50px;
+        }
+        .sub-heading{
+            text-align: center;
+            font-size: 30px;
+        }
+        .img-front{
+            padding-left:10px ;
+
+            
+        }
+        .img2{
+          width:700px;
+          height:500px;
+         border-radius:0 15px 0 15px;
+         border:solid 3px #8c7851;
+   
+}
+        .para{
+         display: flex;
+         flex-wrap:wrap;
+         justify-content: center;
+         align-items: center;
+         
+        }
+
+
+        .para-description{
+          color:#716040;
+          font-family: cursive;
+          font-size: 18px;
+          height:auto;
+          width:650px;
+       }  
+        .navbar{
+            background-color: black;
+            display:flex;
+            align-items: start;
+            padding:5px;
+            color:antiquewhite;
+            justify-content: space-evenly;
+            border: solid 3px whitesmoke;
+
+            
+
+        }
+        .main-heading {
+            color:#0e172c;
+            text-align: center;
+            font-size: 45px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       .btn-container{
+           display:flex;
+          justify-content: center;
+         }
+        .btn{
+          background-color: #0e172c;
+          margin:0 30px;
+         padding: 10px 20px;
+         color: #fffffe;
+        width:170px;
+        border-radius: 40px;
+        cursor: pointer;
+        
+        
+        
+  }
+        .btn:hover{
+           transition: 1s;
+           background-color: #fec7d7;
+       }
+        .container{
+            height:350px;
+            width:400px;
+            text-align: center;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:solid 4px black;
+            border-radius: 5px;
+        }
+        .dog-container{
+            height:500px;
+            width:500px;
+            text-align: center;
+        }
+       .right-container{
+        height:500px;
+        width:250px;
+        display:flex;
+        justify-content:center;
+       }
+        /* Mobile Device*/
+        @media screen and (max-width:500px){
+            body{
+                background-color:bisque;
+            }
+            .heading{
+            text-align: center;
+            font-size: 30px;
+        }
+          .sub-heading{
+            text-align: center;
+            font-size: 15px;
+        }
+           .img-front{
+            padding-left:10px ;
+
+            
+        }
+           .img2{
+          width:400px;
+          height:350px;
+         border-radius:0 10px 0 10px;
+         border:solid 3px #8c7851;
+   
+        }
+        
+
+        .para-description{
+          color:#716040;
+          font-family: cursive;
+          font-size: 18px;
+          height:auto;
+          width:450px;
+       }  
+       
+        .main-heading {
+            color:#0e172c;
+            text-align: center;
+            font-size: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       .btn-container{
+           display:flex;
+          justify-content: center;
+         }
+        .btn{
+          background-color: #0e172c;
+          margin:0 30px;
+         padding: 10px 20px;
+         color: #fffffe;
+        width:1300px;
+        border-radius: 40px;
+        cursor: pointer;
+        
+        
+        
+  }
+        .btn:hover{
+           transition: 1s;
+           background-color: #fec7d7;
+       }
+        .container{
+            height:350px;
+            width:400px;
+            text-align: center;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:solid 4px black;
+            border-radius: 5px;
+        }
+        
+        }
+         /* Table Device*/
+         @media screen and (min-width:501px) and (max-width:768px) {
+            body{
+                background-color:burlywood;
+            }
+            .img-front{
+            height:350px;
+            width:600px;
+
+            
+        }
+            
+         }
+          /* Desktop Device*/
+          @media screen and (min-width:769px) {
+            body{
+                background-color:#fec7d7;
+                display: flex;
+                justify-content: center;
+            }
+           
+
+        }
+            
+            
+        
+    </style>
+</head>
+<body>
+    <div class="body">
+    <div class="navbar">
+        
+        <span>Dogs</span>
+        <span>Cats</span>
+        <span>Fishes</span>
+        <span>Birds</span>
+        <span>About Us</span>
+        <span>Contact Us</span>
+        <span>Sign Up</span>
+        
+    </div>
+    <h1 class="main-heading">Royal pet store </h1>
+    <img src="img1.png" class="img-front" alt="Responsive image"/>
+    <div class="btn-container">
+        <a href="./page/explore.html" class="no-underline">
+         <button class="btn">Explore more</button>
+        </a>
+    </div>
+        <h5 class="sub-heading">Benifits of pet Dogs</h5>
+    <div class="para">
+        
+
+            <p class="para-description">
+                <b>Companionship:</b> Dogs are known for their loyalty and affection. They can provide a constant source of companionship,
+                 helping to reduce feelings of loneliness and isolation.<br/>
+
+               <b>Emotional Support:</b>  Dogs are intuitive and can sense their owner's emotions. Their presence can help alleviate
+                 stress, anxiety, and depression, providing emotional comfort and support.<br/>
+                
+                <b>Physical Activity:</b> Owning a dog often means more exercise, as dogs need regular walks and playtime. This can help 
+                improve your own physical fitness and overall health.<br/>
+                
+               <b>Social Interaction:</b>  Walking a dog or visiting dog parks can increase social interactions and help you connect with
+                 other dog owners. This can lead to new friendships and social networks.<br/>
+                
+                <b>Routine and Structure:</b> Caring for a dog requires a routine, which can help establish structure in your day.
+                 This can be especially beneficial for people who thrive on regular schedules.<br/>
+                
+               <b>Safety and Security:</b>  Many dogs are protective of their homes and families. Their presence can deter intruders
+                 and provide an added sense of security.<br/>
+                
+            </p> 
+            </div>
+            <br/>
+            <br/>
+          <img src="dog1.png" class="img2"/>
+          <h5 class="sub-heading">Benifits of pet Cats</h5>
+
+          <div class="para">
+            <p class="para-description">
+               <b> Calming and Stress-Relief:</b> Watching fish swim can be soothing and meditative. The gentle movement
+                 of fish and the serene environment of a fish jar can help reduce stress and promote relaxation.<br/>
+
+                <b>Aesthetic Appeal:</b> A well-maintained fish jar can be visually pleasing. It can serve as a beautiful and
+                 decorative elementin your home or office, adding a touch of tranquility and natural beauty to your space.<br/>
+
+                <b>No Allergens:</b> Fish are hypoallergenic, so they are a good choice for people with allergies that might react
+                 to pet dander from cats or dogs.<br/>
+
+                <b>Educational Value:</b> Keeping fish can be educational, especially for children. It provides an opportunity
+                 to learn about aquatic life, ecosystems, and the responsibility of caring for a living creature.<br/>
+
+
+            </p> 
+            </div>
+            <br/>
+            <br/>
+          <img src="cat1.png" class="img2"/>
+          <h5 class="sub-heading">Benifits of pet Fishes</h5>
+          <div class="para">
+          <p class="para-description">
+           <b> Pest Control:</b> Cats are natural hunters and can help keep your home free of pests such as mice and insects,
+             contributing to a cleaner and more comfortable living environment.<br/>
+
+           <b> Entertainment and Enrichment:</b> Cats can be highly entertaining with their playful behavior and curious nature.
+             Watching them play can provide joy and amusement.<br/>
+            
+           <b> Routine and Structure:</b> While cats are generally independent, their care routine—feeding, litter box maintenance,
+             and playtime—can add a sense of structure to your day.<br/>
+            
+           <b> Bonding and Affection:</b> Cats can form strong bonds with their owners and show affection in their own unique ways, 
+            such as purring, kneading, and cuddling.<br/>
+        </p> 
+        </div>
+        <br/>
+        <br/>
+        <img src="fish1.png" class="img2"/>
+      
+
+
+    </div>
+</body>
+</html>
+        
+            
+     
